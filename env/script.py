@@ -8,7 +8,7 @@ clientId = 'df8f7091e27a4629bd0a531d717ea0ad'
 clientSecret = '8990c8a785c6447086b24410aada80b1'
 redirectUri = 'http://localhost:3000/callback'
 
-# Step 1: Open the Authorization URL
+# Open the Authorization URL
 def openSpotifyAuthorization():
     baseUrl = "https://accounts.spotify.com/authorize"
     params = {
@@ -20,8 +20,8 @@ def openSpotifyAuthorization():
     authUrl = f"{baseUrl}?{urllib.parse.urlencode(params)}"
     print(f"Opening URL for authorization: {authUrl}")
     webbrowser.open(authUrl)  # This will open the URL in your default web browser
-
-# Step 2: Token Retrieval
+    
+#Token handler
 def getAccessToken(authCode):
     # Encoding client ID and secret
     authStr = f"{clientId}:{clientSecret}"
@@ -52,7 +52,7 @@ def getAccessToken(authCode):
         print(response.json())
         return None
 
-# Step 3: Automate the full process
+# Ye 
 def getToken():
     # Open the authorization URL for the user to log in and approve
     openSpotifyAuthorization()
@@ -69,8 +69,7 @@ def getToken():
         print(f"Access Token: {tokenResponse['access_token']}")
         print(f"Refresh Token: {tokenResponse['refresh_token']}")
         return tokenResponse['access_token']
-
-# Call the function to initiate the process
+    
 token = getToken()
 
 # Use the token for API requests if needed
