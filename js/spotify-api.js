@@ -1,6 +1,6 @@
 // spotify-api.js
 
-const token = 'BQD9IybsHQ8SpAdSGsd6JofEMdpRqU9bTwjndzETGoXk9vIxNpxsh2b11tf9ybATTFqPfoJNnuglzFXcVBpbgu2MpYJ4kZ5Gg7Qcr6g89trHzqfXZQStjS1iSLE-wfYbjH__bbO_TWhIqzBrHElr3yFPGBY4PlRmI40887KFLXTlJr_8frbR0M3MjuMUFyRjtjQgV5juvbNI4MBebZN1lQ';  // Replace with your actual Spotify OAuth token
+const token = 'BQD3b3SEnUbC5mo6cl6QuVJN6bNZPxV-4V-ymPACWZkLNFPoyxd_WgakHujZdINLBqMzpGFp6spXoK0nQP-AFiibIYzSu938jubNPr4nztZojboczVddu3bOJXlgYwrODA_w3rqopEoh2qQBLqiMZ3_eklIlqaFiSzJgEF_MxHz8aDKmxnalcCnWbRx_P2aHUzneFTnbk5th5dUwOyGiQg';
 
 /**
  * Fetch data from Spotify Web API.
