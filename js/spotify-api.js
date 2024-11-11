@@ -1,6 +1,6 @@
 // spotify-api.js
-
 const token = 'BQD3b3SEnUbC5mo6cl6QuVJN6bNZPxV-4V-ymPACWZkLNFPoyxd_WgakHujZdINLBqMzpGFp6spXoK0nQP-AFiibIYzSu938jubNPr4nztZojboczVddu3bOJXlgYwrODA_w3rqopEoh2qQBLqiMZ3_eklIlqaFiSzJgEF_MxHz8aDKmxnalcCnWbRx_P2aHUzneFTnbk5th5dUwOyGiQg';
+
 
 /**
  * Fetch data from Spotify Web API.
