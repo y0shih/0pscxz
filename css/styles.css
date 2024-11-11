@@ -1,0 +1,151 @@
+/* General Styling */
+body {
+    background-color: #181818; /* Spotify-like dark background */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-content {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable scrolling for the main content */
+    padding-top: 80px; /* Ensure content starts below the fixed header */
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Dark header */
+    position: fixed; /* Keep header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-left {
+    font-size: 20px;
+    color: white;
+}
+
+.search-bar {
+    width: 400px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.userProfile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Playlist Section */
+.playlist-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px;
+    padding: 20px;
+}
+
+.playlist-banner {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(to bottom, #461832, #000000); /* Pink gradient */
+    border-radius: 10px;
+    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.playlist-info {
+    display: flex;
+    align-items: center;
+}
+
+.playlist-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.playlist-details {
+    max-width: 600px;
+}
+
+.playlist-title {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.playlist-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.play-btn {
+    background-color: #1db954; /* Spotify g`en */
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.play-btn:hover {
+    background-color: #1aa34a;
+}
+
+.follow-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.more-options {
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+.userProfile-avatar {
+    display: flexbox;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Playlist Section Text */
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #b3b3b3;
+}
+
+p {
+    font-size: 16px;
+    color: #b3b3b3;
+}
