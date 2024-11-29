@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .user-info {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-info">
+        <h1>Profile Info</h1>
+        <div id="profile-data">Loading...</div>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/spotify-api.js') }}"></script>
+    
+    <script>
+        async function fetchProfile() {
+            try {
+                //  token from your spotify-api.js
+                const accessToken = token;  // Using 
+                
+                const response = await fetch('https://api.spotify.com/v1/me', {
+                    headers: {
+                        'Authorization': `Bearer ${accessToken}`
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch profile');
+                }
+
+                const userData = await response.json();
+                
+                // Display the data
+                const profileHtml = `
+                    <p>Display Name: ${userData.display_name}</p>
+                    <p>Email: ${userData.email}</p>
+                    <p>Spotify ID: ${userData.id}</p>
+                    <p>Followers: ${userData.followers.total}</p>
+                    ${userData.images && userData.images.length > 0 ? 
+                        `<img src="${userData.images[0].url}" alt="Profile Picture" width="150">` : 
+                        ''}
+                `;
+                
+                document.getElementById('profile-data').innerHTML = profileHtml;
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('profile-data').innerHTML = 'Error loading profile data';
+            }
+        }
+
+        // 
+        fetchProfile();
+    </script>
+</body>
+</html>

@@ -21,9 +21,13 @@ function displayTracks(tracks) {
         playlistInfo.innerHTML = `
             <img src="${album.images[0].url}" alt="Album Cover" class="playlist-image">
             <div class="playlist-details">
-                <h3>Album</h3>
+                <span class="playlist-type">Album</span>
                 <h1 class="playlist-title">${album.name}</h1>
-                <p>${artist} - ${album.release_date.substring(0, 4)} - ${album.total_tracks} Songs</p>
+                <div class="playlist-meta">
+                    <span class="artist-name">${artist}</span>
+                    <span>${album.release_date.substring(0, 4)}</span>
+                    <span>${album.total_tracks} Songs</span>
+                </div>
                 <div class="playlist-actions">
                     <button class="play-btn">Play</button>
                     <button class="follow-btn">Follow</button>

@@ -12,11 +12,15 @@
         <!-- Header -->
         <header class="header">
             <div class="header-left">
-                <i class="fas fa-home"></i> <!-- Home Icon -->
+                <a href="/" class="home-link"> <!-- Home Link -->
+                    <i class="fas fa-home"></i>
+                </a>
             </div>
             <input type="text" class="search-bar" placeholder="What do you want to play?">
             <div class="userProfile">
-                <img class="userProfile-avatar" src="{{ url_for('static', filename='image/avt.png') }}" alt="User Avatar"> <!-- User Avatar Currently not have lol -->
+                <a href="/profile" class="profile-link"> <!-- Profile Link -->
+                    <img class="userProfile-avatar" src="{{ url_for('static', filename='image/avt.png') }}" alt="User Avatar">
+                </a>
             </div>
         </header>
     

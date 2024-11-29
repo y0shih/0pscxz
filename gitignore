@@ -72,5 +72,4 @@ htmlcov/
 *.tmp
 *.temp
 
-tools/
-script.py
+tools/script.py

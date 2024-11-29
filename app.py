@@ -6,5 +6,8 @@ app = Flask(__name__)
 def homepage():
     return render_template("index.html")
 
+@app.route("/profile")
+def profile():
+    return render_template("profile.html")
 
 app.run(debug=True, port=4000)

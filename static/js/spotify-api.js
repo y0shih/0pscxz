@@ -1,5 +1,5 @@
 // spotify-api.js
-const token = 'BQD3b3SEnUbC5mo6cl6QuVJN6bNZPxV-4V-ymPACWZkLNFPoyxd_WgakHujZdINLBqMzpGFp6spXoK0nQP-AFiibIYzSu938jubNPr4nztZojboczVddu3bOJXlgYwrODA_w3rqopEoh2qQBLqiMZ3_eklIlqaFiSzJgEF_MxHz8aDKmxnalcCnWbRx_P2aHUzneFTnbk5th5dUwOyGiQg';
+const token = 'BQASBa8TQZxqoNXvLD9pLLgRp3x9tsRWrnjwn0BTM8vkOXrvYQ-CnpP8Hvg3xEBSyjBTfd-xeMVaW7lnk3Hiq0jL2vXRxY6_R37FZOJDjd-SMHn245ZB1bLADN4LeXxZA3NZznnQ7jUsI03yXYj_jOrmMdzRq7ou8x2gVgb-w4dV-ituygkDB2ZTTwzSh6VN_Sf4ndud3Md8WUri0SrbpA';
 
 
 /**
