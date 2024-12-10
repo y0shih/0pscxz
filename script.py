@@ -57,7 +57,7 @@ def getAccessToken(authCode):
         print(response.json())
         return None
 
-
+# could be an oauth but too lazy for that shit :broken-heart:
 def getToken():
     
     openSpotifyAuthorization()
