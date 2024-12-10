@@ -10,4 +10,4 @@ def homepage():
 def profile():
     return render_template("profile.html")
 
-app.run(debug=True, port=4000)
+app.run(host="localhost", port=8080, debug=True)

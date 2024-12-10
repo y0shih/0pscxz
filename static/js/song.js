@@ -3,7 +3,7 @@
  * @param {Array} tracks - The top tracks fetched from the Spotify API.
  */
 function displayTracks(tracks) {
-    const mainContent = document.querySelector('.playlist-section');
+    const mainContent = document.querySelector('.playlist-section'); // Make sure it isnt in main section
     mainContent.innerHTML = '';  // Clear the existing content
 
     tracks.forEach(track => {
@@ -44,7 +44,7 @@ function displayTracks(tracks) {
     });
 }
 
-// Fetch top tracks and display them
+// Fetch top tracks and display 
 getTopTracks(5)
     .then(tracks => {
         displayTracks(tracks);

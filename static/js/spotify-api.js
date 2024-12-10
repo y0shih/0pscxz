@@ -1,6 +1,8 @@
-// spotify-api.js
-const token = 'BQASBa8TQZxqoNXvLD9pLLgRp3x9tsRWrnjwn0BTM8vkOXrvYQ-CnpP8Hvg3xEBSyjBTfd-xeMVaW7lnk3Hiq0jL2vXRxY6_R37FZOJDjd-SMHn245ZB1bLADN4LeXxZA3NZznnQ7jUsI03yXYj_jOrmMdzRq7ou8x2gVgb-w4dV-ituygkDB2ZTTwzSh6VN_Sf4ndud3Md8WUri0SrbpA';
+// spotify-api.js // Make sure to rewnew this 
+// Load environment variables
+require('dotenv').config();
 
+const token = process.env.SPOTIFY_TOKEN;
 
 /**
  * Fetch data from Spotify Web API.

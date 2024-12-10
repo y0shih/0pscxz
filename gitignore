@@ -71,5 +71,3 @@ htmlcov/
 # Temporary files
 *.tmp
 *.temp
-
-tools/script.py
